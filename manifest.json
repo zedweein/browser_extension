@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "Awn Demo System",
+  "version": "1.0",
+  "description": "Awn Demo System",
+  "permissions": [
+    "debugger",
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["scripts/jquery-1.8.3.min.js","background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/48.png",
+      "128": "images/128.png"
+    }
+  },
+  "icons": {
+    "16": "images/16.png",
+    "32": "images/32.png",
+    "48": "images/48.png",
+    "128": "images/128.png"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["scripts/jquery-1.8.3.min.js", "scripts/content-script.js"],
+    "run_at": "document_start"
+  }],
+  "web_accessible_resources": ["scripts/inject.js"],
+  "homepage_url": "https://www.baidu.com"
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      height: 30px;
+      width: 30px;
+      outline: none;
+    }
+
+    .popup {
+      width: 300px;
+      height: 200px;
+      margin: 0;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .title {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 35px;
+      line-height: 34px;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 2px;
+      text-shadow: 1px 1px 2px #292929;
+      color: #292929;
+      font-weight: bold;
+    }
+
+    .pop-main {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .pop-main input {
+      width: 100%;
+      margin: 0;
+      padding: 0 5px;
+      box-sizing: border-box;
+      height: 25px;
+      margin-bottom: 6px;
+      border-radius: 2px;
+      border: 1px solid #3285ff;
+      outline: none;
+      color: #656565;
+    }
+
+    .pop-main button {
+      border: none;
+      outline: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 30px;
+      line-height: 29px;
+      color: #ffffff;
+      background: #3385ff;
+      text-align: center;
+      border-radius: 2px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .pop-main p{
+      color: #383737;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="popup">
+    <p class="title">Awn Demo System 1.0</p>
+    <div class="pop-main">
+      <p>系统路径(Hosturl):<input value="http://10.221.244.145:8080"  id="hosturl"/></p>
+      <p>捕获模式(Pattern):<input value="/dwr/call/plaincall/" id="pattern"/></p>
+      <p><button id="systemData">捕获系统数据</button></p>
+    </div>
+  </div>
+
+  <script src="scripts/jquery-1.8.3.min.js"></script>
+  <script src="scripts/popup.js"></script>
+</body>
+
+</html>
